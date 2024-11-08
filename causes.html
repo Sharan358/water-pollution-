@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Causes of Water Pollution</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <style>
+     * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background: #f4f4f9;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Header styling */
+    header {
+      background-color: #2c3e50;
+      color: #fff;
+      padding: 15px 20px;
+      height: 70px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+    nav ul { list-style: none; display: flex; gap: 20px; }
+    nav ul li a { color: #fff; text-decoration: none; font-weight: bold; }
+    nav ul li a:hover {
+      background-color: #e67e22;
+      color: #fff;
+    }
+    .content { padding: 20px; max-width: 1200px; margin: 0 auto; }
+    .causes-list { display: flex; flex-wrap: wrap; gap: 20px; }
+    .cause { background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); width: 48%; transition: all 0.3s ease; }
+    .cause:hover { background-color: #e0f7fa; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); }
+    .cause h3 { margin-bottom: 10px; color: #00796b; font-size: 1.2rem; }
+    .cause p { color: #555; font-size: 1rem; line-height: 1.6; }
+    
+    .cause img {
+      width: 250px; /* Fixed width */
+      height: 250px; /* Fixed height */
+      object-fit: cover; /* Ensures images cover the area without distortion */
+      border-radius: 8px;
+      margin-bottom: 15px;
+      transition: all 0.3s ease; /* Smooth transition for the hover effect */
+    }
+
+    .cause img:hover {
+      transform: scale(1.1); /* Slightly enlarges the image */
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+      opacity: 0.9; /* Slightly reduces opacity */
+    }
+
+    .footer { text-align: center; padding: 20px; background-color: #000; color: #fff; }
+    .links { text-align: center; margin-top: 20px; }
+    .links a { color: #00796b; text-decoration: none; font-weight: bold; margin: 0 10px; }
+    .links a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">BluePlanet</div> 
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="causes.html">Causes</a></li>
+        <li><a href="effects.html">Effects</a></li>
+        <li><a href="methodology.html">Solutions</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="compliant.html">Complaints</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="login.html" class="icon-link"><i class='bx bx-user'></i></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="content">
+    <h2>Causes of Water Pollution</h2>
+    <div class="causes-list">
+      <!-- Cause 1 -->
+      <div class="cause">
+        <img src="https://i.pinimg.com/736x/57/55/87/575587b502bdf64e8a5d7e6d97d2b056.jpg" alt="Industrial Waste">
+        <h3>Industrial Waste</h3>
+        <p>Factories and industries discharge harmful chemicals and pollutants into rivers, lakes, and oceans, causing severe contamination of water sources.</p>
+      </div>
+
+      <!-- Cause 2 -->
+      <div class="cause">
+        <img src="https://i.pinimg.com/474x/75/84/f1/7584f1c8b7a0b42610ab12e9f78e097f.jpg" alt="Agricultural Runoff">
+        <h3>Agricultural Runoff</h3>
+        <p>Pesticides, fertilizers, and waste from farms flow into water bodies, contributing to eutrophication and other harmful effects on aquatic life.</p>
+      </div>
+
+      <!-- Cause 3 -->
+      <div class="cause">
+        <img src="https://i.pinimg.com/474x/3d/82/b7/3d82b7bba80cc0052e2c8bbfff9d8c99.jpg" alt="Deforestation">
+        <h3>Deforestation</h3>
+        <p>Clear-cutting forests leads to soil erosion, and the runoff carries silt and debris into water bodies, impacting water quality and ecosystems.</p>
+      </div>
+
+      <!-- Cause 4 -->
+      <div class="cause">
+        <img src="https://i.pinimg.com/474x/e3/48/00/e348007313e1bcc604ebb89d61909939.jpg" alt="Urbanization">
+        <h3>Urbanization</h3>
+        <p>Rapid urban growth results in increased sewage, garbage, and industrial waste being dumped into water bodies, increasing pollution levels.</p>
+      </div>
+
+      <!-- Cause 5 -->
+      <div class="cause">
+        <img src="https://i.pinimg.com/474x/eb/89/3b/eb893befcdf9d064e36df93314c44634.jpg" alt="Oil Spills">
+        <h3>Oil Spills</h3>
+        <p>Accidental spills of oil and petroleum products into oceans and rivers severely damage aquatic life and affect water quality for years.</p>
+      </div>
+
+      <!-- Cause 6 -->
+      <div class="cause">
+        <img src="https://i.pinimg.com/474x/04/f3/24/04f32445d0a0938acfac8e7d08a1afba.jpg" alt="Plastic Pollution">
+        <h3>Plastic Pollution</h3>
+        <p>Plastic waste, which takes hundreds of years to decompose, clogs waterways and harms marine life, leading to long-lasting pollution.</p>
+      </div>
+
+      <!-- Cause 7 -->
+      <div class="cause">
+        <img src="https://i.pinimg.com/474x/ae/07/88/ae0788f78306106d59443ca0b7686cfa.jpg" alt="Climate Change">
+        <h3>Climate Change</h3>
+        <p>Changing weather patterns due to climate change increase the frequency and intensity of floods, leading to the spread of waterborne diseases and pollutants.</p>
+      </div>
+
+      <!-- Cause 8 -->
+      <div class="cause">
+        <img src="https://i.pinimg.com/474x/52/c6/1d/52c61d7d25a328ebe9fb76863d825b05.jpg" alt="Mining Activities">
+        <h3>Mining Activities</h3>
+        <p>Mining operations introduce harmful chemicals such as mercury into water systems, degrading water quality and harming aquatic life.</p>
+      </div>
+
+      <!-- Cause 9 -->
+      <div class="cause">
+        <img src="https://i.pinimg.com/474x/c1/ee/19/c1ee19749e42fdce467b6ae2d1da46fa.jpg" alt="Waste Disposal">
+        <h3>Waste Disposal</h3>
+        <p>Improper disposal of household, hospital, and industrial waste often leads to hazardous chemicals contaminating nearby water sources.</p>
+      </div>
+
+      <!-- Cause 10 -->
+      <div class="cause">
+        <img src="https://i.pinimg.com/474x/2e/c2/ff/2ec2ff4aa9ab5e162af931ac27af3f18.jpg" alt="Wastewater Discharge">
+        <h3>Wastewater Discharge</h3>
+        <p>Untreated or poorly treated wastewater discharged into rivers and lakes can introduce harmful pathogens and chemicals, polluting the water.</p>
+      </div>
+    </div>
+
+    <!-- Links to Learn More -->
+    <div class="links">
+      <p>Learn more about the causes of water pollution:</p>
+      <a href="https://www.epa.gov/trash-free-waters" target="_blank">EPA - Waste Disposal</a> |
+      <a href="https://www.unep.org/resources/report/mining-and-water-pollution" target="_blank">UNEP - Mining and Water Pollution</a> |
+      <a href="https://www.who.int/health-topics/water-pollution" target="_blank">WHO - Water Pollution</a>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2024 WaterPollution Project. All rights reserved.</p>
+  </div>
+</body>
+</html>

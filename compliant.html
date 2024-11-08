@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Water Pollution</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background: #f4f4f9;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Header styling */
+    header {
+      background-color: #2c3e50;
+      color: #fff;
+      padding: 15px 20px;
+      height: 70px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #FFD700;
+    }
+
+    .icon-link {
+      display: flex;
+      align-items: center;
+    }
+
+    /* Main styling */
+    main {
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+      background: #F5F7FA;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: #00509E;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    /* Form styling */
+    form {
+      max-width: 600px;
+      width: 100%;
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    form label {
+      font-weight: bold;
+      color: #333;
+      font-size: 1.1rem;
+    }
+
+    form input, form textarea, form select {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+
+    form button {
+      background-color: #28A745;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 1.1rem;
+    }
+
+    form button:hover {
+      background-color: #218838;
+    }
+
+    #confirmationMessage {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 1.1rem;
+      color: green;
+    }
+
+    /* Footer styling */
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+
+    
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">BluePlanet</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="causes.html">Causes</a></li>
+        <li><a href="effects.html">Effects</a></li>
+        <li><a href="methodology.html">Solutions</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="compliant.html">Complaints</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="login.html" class="icon-link"><i class='bx bx-user'></i></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div>
+      <h2>Compliants on Water Pollution in Your Area</h2>
+      <form id="complaintForm">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="location">Location (Area/City):</label>
+        <input type="text" id="location" name="location" required>
+
+        <label for="complaint">Describe the Complaint:</label>
+        <textarea id="complaint" name="complaint" rows="4" required></textarea>
+
+        <label for="severity">Severity of Pollution:</label>
+        <select id="severity" name="severity" required>
+          <option value="low">Low</option>
+          <option value="moderate">Moderate</option>
+          <option value="high">High</option>
+        </select>
+
+        <button type="submit">Submit Feedback</button>
+      </form>
+      <div id="confirmationMessage"></div>
+    </div>
+  </main>
+
+  <footer>
+      <p>&copy; 2024 WaterPollution. All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('complaintForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  // Get the values from the form
+  const name = document.getElementById('name').value;
+  const location = document.getElementById('location').value;
+  const complaint = document.getElementById('complaint').value;
+  const severity = document.getElementById('severity').value;
+
+  // Simple validation to check if all fields are filled
+  if (!name || !location || !complaint || !severity) {
+    alert("Please fill in all the fields!");
+    return;
+  }
+
+  // Display a confirmation message
+  document.getElementById('confirmationMessage').textContent = "Thank you for your feedback. Your complaint has been submitted.";
+  
+  // Optionally, you can store the feedback locally or send it to a server
+  // Here we just log it to the console for simplicity
+  console.log({
+    name: name,
+    location: location,
+    complaint: complaint,
+    severity: severity
+  });
+
+  // Reset the form
+  document.getElementById('complaintForm').reset();
+});
+  </script>
+</body>
+</html>
+
+

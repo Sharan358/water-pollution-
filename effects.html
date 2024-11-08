@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Water Pollution - Effects</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js Library -->
+  <style>
+     * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background: #f4f4f9;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Header styling */
+    header {
+      background-color: #2c3e50;
+      color: #fff;
+      padding: 15px 20px;
+      height: 70px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      background-color: #e67e22;
+      color: #fff;
+    }
+
+    .icon-link {
+      display: flex;
+      align-items: center;
+    }
+
+    .content {
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      color: hsl(0, 100%, 2%);
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 15px;
+      color: #555;
+    }
+
+    img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      margin-top: 20px;
+    }
+
+    /* Effects Cards */
+    .effects-cards {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .card {
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      width: 32%;
+      padding: 20px;
+      border-radius: 8px;
+      transition: transform 0.3s;
+      text-align: center;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      max-height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .card h3 {
+      margin-top: 15px;
+      color: #333;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    /* Graph Section Styling */
+    .chart-container {
+      width: 100%;
+      height: 400px;
+      margin-top: 40px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    @media screen and (max-width: 768px) {
+      .effects-cards {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .card {
+        width: 80%;
+      }
+
+      .search-bar input[type="text"] {
+        max-width: 100%;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav ul li {
+        margin-bottom: 10px;
+      }
+    }
+    footer {
+      background-color: #060000;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-content p {
+      font-size: 1rem;
+    }
+
+   
+    
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">BluePlanet</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="causes.html">Causes</a></li>
+        <li><a href="effects.html">Effects</a></li>
+        <li><a href="methodology.html">Solutions</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="compliant.html">Complaints</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="login.html" class="icon-link"><i class='bx bx-user'></i></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="content">
+    <div class="section">
+      <h2>Health Impacts of Water Pollution</h2>
+      <p>Water pollution has severe effects on human health. Polluted water can contain harmful pathogens, chemicals, and toxins that can cause diseases such as cholera, dysentery, and hepatitis. Long-term exposure to contaminated water can lead to cancer, reproductive issues, and neurological disorders.</p>
+      <img src="https://i.pinimg.com/474x/57/4f/b6/574fb63d402d89f6e878793a6c2f2bba.jpg" alt="Health Effects of Water Pollution">
+    </div>
+
+    <div class="section">
+      <h2>Environmental Effects of Water Pollution</h2>
+      <p>Water pollution disrupts aquatic ecosystems by contaminating water bodies, harming aquatic life, and depleting oxygen levels. Many aquatic species, such as fish and amphibians, suffer from diseases or die due to polluted water. Eutrophication caused by nutrient overload can lead to algal blooms, suffocating aquatic life.</p>
+      <img src="https://i.pinimg.com/736x/36/f5/40/36f54081cf13c9553ce92604db4515f2.jpg" alt="Environmental Effects of Water Pollution">
+    </div>
+
+    <!-- Graph of Water Pollution from 2000 to 2024 -->
+    <div class="section">
+      <h2>Water Pollution Trend (2000 - 2024)</h2>
+      <div class="chart-container">
+        <canvas id="pollutionChart"></canvas>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Biodiversity Loss</h2>
+      <p>Water pollution significantly impacts biodiversity, threatening the survival of aquatic and terrestrial species. Contaminants can destroy habitats and reduce the populations of species reliant on clean water. Invasive species often thrive in polluted waters, further disrupting the natural balance.</p>
+      <img src="https://i.pinimg.com/474x/c1/f6/b1/c1f6b14ae3f1a8865500ae4c26efc0d5.jpg" alt="Biodiversity Loss Due to Water Pollution">
+    </div>
+
+    <div class="section">
+      <h2>Water Scarcity</h2>
+      <p>Polluted water sources contribute to water scarcity by making once-usable water bodies unsafe for consumption. As water becomes contaminated, access to clean water diminishes, leading to shortages, especially in regions that already struggle with water resources.</p>
+      <img src="https://i.pinimg.com/474x/b5/50/45/b5504564ba91b87dbc2e3348c258980a.jpg" alt="Water Scarcity and Pollution">
+    </div>
+
+    <div class="section">
+      <h2>Climate Change Impacts</h2>
+      <p>Water pollution is also linked to climate change. The degradation of water quality can exacerbate the effects of climate change, such as rising temperatures and extreme weather events. The contamination of freshwater resources hinders efforts to mitigate climate impacts on human populations and ecosystems.</p>
+      <img src="https://i.pinimg.com/474x/da/9a/92/da9a9290559a4f736e7c7bd3595caef5.jpg" alt="Climate Change and Water Pollution">
+    </div>
+
+    <!-- Effects Cards Section -->
+    <div class="section">
+      <h2>Visualizing the Effects</h2>
+      <div class="effects-cards">
+        <div class="card">
+          <img src="https://i.pinimg.com/474x/ae/96/f1/ae96f1572d810acedff0363098ebb9f2.jpg" alt="Health Effects">
+          <h3>Health Risks</h3>
+          <p>Contaminated water leads to various health issues like cholera, typhoid, and cancer.</p>
+        </div>
+        <div class="card">
+          <img src="https://i.pinimg.com/474x/14/f3/11/14f3112a516af2291b3a912239bdbb36.jpg" alt="Environmental Impacts">
+          <h3>Environmental Impact</h3>
+          <p>Aquatic life faces extinction due to water pollution, with harmful effects on biodiversity.</p>
+        </div>
+        <div class="card">
+          <img src="https://i.pinimg.com/474x/7a/86/9b/7a869b81b2ff6bcbab2da79486060022.jpg" alt="Water Scarcity">
+          <h3>Water Scarcity</h3>
+          <p>Pollution leads to dwindling clean water sources, contributing to global water scarcity.</p>
+        </div>
+        <!-- New Cards -->
+        <div class="card">
+          <img src="https://i.pinimg.com/474x/f4/1a/ea/f41aea729a4a075ee198aaa65c92fd1e.jpg" alt="Ocean Pollution">
+          <h3>Ocean Pollution</h3>
+          <p>Pollution in oceans threatens marine life and contaminates seafood.</p>
+        </div>
+        <div class="card">
+          <img src="https://i.pinimg.com/474x/58/21/f1/5821f12db3c2498d8db39846e813dbc1.jpg" alt="Soil Contamination">
+          <h3>Soil Contamination</h3>
+          <p>Water pollution can lead to soil contamination, affecting agriculture and food quality.</p>
+        </div>
+        <div class="card">
+          <img src="https://i.pinimg.com/474x/db/00/63/db006312cd40d0813956b9f95b7f213b.jpg" alt="Ecosystem Collapse">
+          <h3>Ecosystem Collapse</h3>
+          <p>Pollution disrupts the food chain and threatens the survival of ecosystems.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2024 WaterPollution. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    var ctx = document.getElementById('pollutionChart').getContext('2d');
+    var pollutionChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['2000', '2005', '2010', '2015', '2020', '2024'],
+        datasets: [{
+          label: 'Water Pollution Level',
+          data: [10, 30, 50, 70, 80, 90],
+          borderColor: '#36a2eb',
+          borderWidth: 3,
+          fill: false
+        }]
+      }
+    });
+  </script>
+</body>
+</html>

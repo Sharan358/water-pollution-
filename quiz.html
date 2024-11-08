@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Water Pollution Quiz</title>
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.6; background-color: #e0f7fa; margin: 0; padding: 0; }
+    .quiz-container { max-width: 800px; margin: 30px auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); }
+    h1 { text-align: center; color: #00796b; font-size: 2rem; }
+    .question { font-size: 1.2rem; margin: 20px 0; }
+    .option { margin: 10px 0; }
+    button { background-color: #00796b; color: white; border: none; padding: 10px 20px; cursor: pointer; border-radius: 5px; font-size: 1rem; }
+    button:hover { background-color: #004d40; }
+    .answer { margin-top: 20px; }
+    .correct { color: green; }
+    .incorrect { color: red; }
+    .home-button { background-color: #0288d1; padding: 10px 20px; color: white; font-size: 1rem; text-align: center; display: inline-block; margin-top: 20px; border-radius: 5px; }
+    .home-button:hover { background-color: #01579b; }
+    .result-container { margin-top: 20px; text-align: center; }
+  </style>
+</head>
+<body>
+
+<div class="quiz-container">
+  <h1>Test Your Knowledge on Water Pollution</h1>
+
+  <form id="quizForm">
+    <!-- Questions -->
+    <div class="question">
+      <p>1. What is a major cause of water pollution?</p>
+      <div class="option"><input type="radio" name="q1" value="A"> A. Industrial Waste</div>
+      <div class="option"><input type="radio" name="q1" value="B"> B. Solar Power</div>
+      <div class="option"><input type="radio" name="q1" value="C"> C. Wind Energy</div>
+      <div class="option"><input type="radio" name="q1" value="D"> D. Planting Trees</div>
+    </div>
+
+    <div class="question">
+      <p>2. What is the effect of untreated sewage on water bodies?</p>
+      <div class="option"><input type="radio" name="q2" value="A"> A. Decreases oxygen levels</div>
+      <div class="option"><input type="radio" name="q2" value="B"> B. Purifies the water</div>
+      <div class="option"><input type="radio" name="q2" value="C"> C. Increases aquatic biodiversity</div>
+      <div class="option"><input type="radio" name="q2" value="D"> D. Increases water clarity</div>
+    </div>
+
+    <div class="question">
+      <p>3. What is a sustainable solution to water pollution?</p>
+      <div class="option"><input type="radio" name="q3" value="A"> A. Reducing plastic waste</div>
+      <div class="option"><input type="radio" name="q3" value="B"> B. Using more pesticides</div>
+      <div class="option"><input type="radio" name="q3" value="C"> C. Increased water extraction</div>
+      <div class="option"><input type="radio" name="q3" value="D"> D. Ignoring waste disposal</div>
+    </div>
+
+    <div class="question">
+      <p>4. Which pollutant is most commonly found in oil spills?</p>
+      <div class="option"><input type="radio" name="q4" value="A"> A. Petroleum</div>
+      <div class="option"><input type="radio" name="q4" value="B"> B. Mercury</div>
+      <div class="option"><input type="radio" name="q4" value="C"> C. Pesticides</div>
+      <div class="option"><input type="radio" name="q4" value="D"> D. Phosphates</div>
+    </div>
+
+    <div class="question">
+      <p>5. Which of these causes eutrophication in water bodies?</p>
+      <div class="option"><input type="radio" name="q5" value="A"> A. Excessive nutrients like nitrogen and phosphorus</div>
+      <div class="option"><input type="radio" name="q5" value="B"> B. Excessive oxygen</div>
+      <div class="option"><input type="radio" name="q5" value="C"> C. High levels of carbon dioxide</div>
+      <div class="option"><input type="radio" name="q5" value="D"> D. Solar radiation</div>
+    </div>
+
+    <div class="question">
+      <p>6. Which of the following is a non-point source of water pollution?</p>
+      <div class="option"><input type="radio" name="q6" value="A"> A. Agricultural runoff</div>
+      <div class="option"><input type="radio" name="q6" value="B"> B. Wastewater discharge from factories</div>
+      <div class="option"><input type="radio" name="q6" value="C"> C. Oil spills</div>
+      <div class="option"><input type="radio" name="q6" value="D"> D. Stormwater drainage</div>
+    </div>
+
+    <div class="question">
+      <p>7. What is the most effective method to remove large debris from water bodies?</p>
+      <div class="option"><input type="radio" name="q7" value="A"> A. Mechanical filtration</div>
+      <div class="option"><input type="radio" name="q7" value="B"> B. Biological filtration</div>
+      <div class="option"><input type="radio" name="q7" value="C"> C. Chemical treatment</div>
+      <div class="option"><input type="radio" name="q7" value="D"> D. Solar radiation</div>
+    </div>
+
+    <div class="question">
+      <p>8. Which type of pollution affects marine life the most?</p>
+      <div class="option"><input type="radio" name="q8" value="A"> A. Plastic pollution</div>
+      <div class="option"><input type="radio" name="q8" value="B"> B. Noise pollution</div>
+      <div class="option"><input type="radio" name="q8" value="C"> C. Air pollution</div>
+      <div class="option"><input type="radio" name="q8" value="D"> D. Soil contamination</div>
+    </div>
+
+    <div class="question">
+      <p>9. What is the process of removing harmful chemicals from water called?</p>
+      <div class="option"><input type="radio" name="q9" value="A"> A. Filtration</div>
+      <div class="option"><input type="radio" name="q9" value="B"> B. Flocculation</div>
+      <div class="option"><input type="radio" name="q9" value="C"> C. Distillation</div>
+      <div class="option"><input type="radio" name="q9" value="D"> D. Sedimentation</div>
+    </div>
+
+    <div class="question">
+      <p>10. What is the effect of water pollution on human health?</p>
+      <div class="option"><input type="radio" name="q10" value="A"> A. Can cause waterborne diseases</div>
+      <div class="option"><input type="radio" name="q10" value="B"> B. Improves digestion</div>
+      <div class="option"><input type="radio" name="q10" value="C"> C. Increases immunity</div>
+      <div class="option"><input type="radio" name="q10" value="D"> D. Enhances skin health</div>
+    </div>
+
+    <button type="submit">Submit Quiz</button>
+  </form>
+
+  <div id="result" class="result-container"></div>
+  <button class="home-button" onclick="window.location.href='index.html';">Go to Home Page</button>
+</div>
+
+<script>
+  const quizForm = document.getElementById('quizForm');
+  const resultDiv = document.getElementById('result');
+  
+  const answers = {
+    q1: 'A', q2: 'A', q3: 'A', q4: 'A', q5: 'A',
+    q6: 'A', q7: 'A', q8: 'A', q9: 'A', q10: 'A'
+  };
+
+  quizForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    let score = 0;
+    let answerDetails = '';
+    const formData = new FormData(quizForm);
+    
+    formData.forEach((value, key) => {
+      // Check the user's answer and compare with the correct answer
+      if (value === answers[key]) {
+        score++;
+        answerDetails += `<p class="correct">Question ${key.charAt(1)}: Correct! Your answer was: ${value}</p>`;
+      } else {
+        answerDetails += `<p class="incorrect">Question ${key.charAt(1)}: Incorrect. The correct answer is: ${answers[key]}</p>`;
+      }
+    });
+
+    // Display result and quiz completion message
+    resultDiv.innerHTML = `
+      <h3>Your Score: ${score} / 10</h3>
+      <div class="answer">${answerDetails}</div>
+      <p>Thank you for taking the quiz! You can now proceed to the homepage or retake the quiz.</p>
+    `;
+  });
+</script>
+
+</body>
+</html>

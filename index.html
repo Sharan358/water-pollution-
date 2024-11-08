@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Water Pollution Awareness</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background: #f4f4f9;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Header styling */
+    header {
+      background-color: #2c3e50;
+      color: #fff;
+      padding: 15px 20px;
+      height: 70px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    nav {
+      flex-grow: 1;
+      text-align: right;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: flex-end;
+      list-style-type: none;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.1rem;
+      padding: 10px 15px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: #e67e22;
+      color: #fff;
+    }
+
+    /* Call to action section */
+    .cta-section {
+      text-align: center;
+      height: 400px; /* Increased height for the banner */
+      padding: 40px 20px; /* Adjusted padding for a balanced look */
+      background-image: url('https://i.pinimg.com/originals/09/ca/46/09ca46dccc23e53f362dfd93c78a95a5.gif'); /* Background image */
+      background-size: cover;
+      color: #fff;
+    }
+
+    .cta-section h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .cta-section p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .cta-button {
+      background-color: #e67e22;
+      color: #fff;
+      padding: 15px 30px;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-transform: uppercase;
+      transition: background 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #d35400;
+    }
+
+    /* Features section */
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 40px 20px;
+      background-color: #ecf0f1;
+      text-align: center;
+    }
+
+    .feature-item {
+      width: 28%;
+      margin: 15px 0;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .feature-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .feature-item img {
+      width: 100px;  /* Set a fixed width */
+      height: 100px; /* Set a fixed height */
+      object-fit: cover; /* Ensures images cover the area without distortion */
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .feature-item h3 {
+      font-size: 1.4rem;
+      color: #34495e;
+    }
+
+    footer {
+      margin-top: auto;
+      background-color: #2c3e50;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+   
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">BluePlanet</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="causes.html">Causes</a></li>
+        <li><a href="effects.html">Effects</a></li>
+        <li><a href="methodology.html">Solutions</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="compliant.html">Complaints</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="login.html" class="icon-link"><i class='bx bx-user'></i></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="cta-section">
+    <h1>Welcome to Water Pollution Awareness</h1>
+    <p>Understanding water pollution is the first step toward protecting our planet. Explore the causes, impacts, and solutions to create a cleaner, healthier future for everyone.</p>
+    
+    <a href="b_causes.html"><button class="cta-button">Get Started</button></a>
+  </section>
+
+  <section class="features">
+    <div class="feature-item">
+      <img src="https://i.pinimg.com/474x/14/f3/11/14f3112a516af2291b3a912239bdbb36.jpg" alt="Causes Icon">
+      <h3>Explore the Causes</h3>
+      <p>Learn about the leading sources of water pollution and their far-reaching effects.</p>
+    </div>
+    <div class="feature-item">
+      <img src="https://i.pinimg.com/474x/15/57/10/1557107bb60d6f369748c32e3c36ef33.jpg" alt="Effects Icon">
+      <h3>Understand the Effects</h3>
+      <p>Discover how polluted water impacts human health, ecosystems, and the environment.</p>
+    </div>
+    <div class="feature-item">
+      <img src="https://i.pinimg.com/474x/ae/96/f1/ae96f1572d810acedff0363098ebb9f2.jpg" alt="Solutions Icon">
+      <h3>Solutions to Prevent Pollution</h3>
+      <p>Uncover practical steps you can take to combat water pollution locally and globally.</p>
+    </div>
+    <div class="feature-item">
+      <img src="https://i.pinimg.com/474x/23/2d/ea/232dea53b1b61bdb2cb1f567bec2cf23.jpg" alt="Testing Icon">
+      <h3>Water Quality Testing</h3>
+      <p>Find out how to test water quality and monitor the safety of your local water sources.</p>
+    </div>
+    <div class="feature-item">
+      <img src="https://i.pinimg.com/736x/5b/27/63/5b2763c18038b7db2efa9568f435d269.jpg" alt="Tips Icon">
+      <h3>Water Conservation Tips</h3>
+      <p>Adopt sustainable practices to conserve water in your daily life and reduce wastage.</p>
+    </div>
+    <div class="feature-item">
+      <img src="https://i.pinimg.com/474x/95/21/7a/95217a760ada2291431d5875b966cbba.jpg" alt="Engagement Icon">
+      <h3>Get Involved</h3>
+      <p>Join local and global initiatives to make a positive impact on water quality and preservation.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Water Pollution Awareness. All rights reserved.</p>
+  </footer>
+</body>
+</html>
